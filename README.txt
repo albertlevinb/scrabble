@@ -1,5 +1,5 @@
-GitHub Pages URL: 
-GitHub Repository URL:
+GitHub Pages URL: https://albertlevinb.github.io/scrabble/
+GitHub Repository URL: https://github.com/albertlevinb/scrabble
 
 Implemented features (Program Integrity/Design):
 
