@@ -1,0 +1,72 @@
+<!--
+   Name: Albert Levin
+   Date: 12/19/22
+-->
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Rules below for desktop view-->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+    <link href="https://fonts.cdnfonts.com/css/interstate-2" rel="stylesheet">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/interstate-2');
+    </style>
+    <!--Title-->
+    <title>Play Scrabble</title>
+</head>
+<body>
+    <div class="main">
+        <!--Header-->
+        <header>
+            <h1>
+                <br>Welcome to Scrabble! <br>
+                <br>
+            </h1>
+        </header>
+        <!--Generate the tiles-->
+        <div id="Tiles"></div>
+        <!--This div is for the two buttons: Reset Board and Return Tiles-->
+        <div id="buttons">
+            <br>
+            <!--This button will reset the game-->
+            <input type="submit" id="reset" value="Reset Board">
+            <!--This button will return the tiles back to the Rack-->
+            <input type="submit" id="returnTiles" value="Return Tiles">
+        </div>
+        <div id="scoreTotal">
+            <br>
+            <!--Displays the score for the User-->
+            <div class="scoreClass">Score: <span id="scoreID"></span>
+            </div>
+            <br>
+            <!--End Turn (Submit) button-->
+            <div class="endTurn">
+                <input type="submit" id="endturn" value="Submit Word">
+            </div>
+            <br>
+        </div>
+        <!--Generate a new Scrabble board-->
+        <div id="scrabbleBoard"></div>
+        <br>
+        <!--Remaining Letter Table-->
+        <div id="remainingTiles"></div>
+    </div>
+    <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+        </a>
+    </p>
+    <!--Footer-->
+    <footer>
+        <p>Copyright © 2022 Albert Levin</p>
+    </footer>
+    <!-- JavaScript/jQuery Plugins (including jQuery UI) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="js/Scrabble_Pieces_AssociativeArray.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

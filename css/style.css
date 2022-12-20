@@ -1,0 +1,161 @@
+/* 
+Name: Albert Levin 
+Date: 12/19/22 
+*/
+
+/* Official Scrabble Game Font: Interstate Bold. Sources: https://wordfinder.yourdictionary.com/blog/scrabble-letter-tile-fonts/ & https://www.cdnfonts.com/interstate-2.font */
+/* Standard button styling: https://www.w3schools.com/css/css3_buttons.asp */
+
+header,
+form,
+div,
+footer {
+    display: block;
+}
+
+body {
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: center;
+}
+
+header {
+    margin-top: 5%;
+    text-align: center;
+}
+
+/* CSS rules for the header message */
+h1 {
+    font-size: 36px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CSS rules for the Tiles Rack*/
+#Tiles {
+    margin-left: 85px;
+    background-image: url(../images/ScrabbleRack.png);
+    /* Source: https://developer.mozilla.org/en-US/docs/Web/CSS/background-image */
+    background-repeat: no-repeat;
+}
+
+#TilesRack {
+    margin-left: 90px;
+}
+
+/* CSS rules for the Reset Button */
+#reset {
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* CSS rules for the Return Tiles back to the Rack Button */
+#returnTiles {
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* CSS rules for the End Turn (Submit) Button */
+#endturn {
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* CSS rules for the User's Score */
+.scoreClass {
+    font-size: 20pt;
+    font-weight: bold;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CSS rules for the Remaining Letter table */
+table.remainword {
+    margin: auto;
+    border: 2px solid #5d5d5d;
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CSS rules for each of the Remaining Letter cells */
+.remainingLetter {
+    border: 2px solid #5d5d5d;
+    padding: 3px;
+    text-align: center;
+}
+
+div#remainingTiles {
+    display: block;
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+}
+
+/* CSS rules for each row in the table */
+tr {
+    min-height: 56px;
+    max-width: 870px;
+    height: 64px;
+}
+
+td {
+    font-weight: bold;
+    width: 64px;
+    height: 64px;
+    margin: auto;
+}
+
+td.regular {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #d3d3d3;
+    border: 2px solid #5d5d5d;
+    font-size: 10pt;
+}
+
+/* CSS rules for the start position cell */
+td.start {
+    font-family: "Interstate", sans-serif;
+    color: #000000;
+    text-align: center;
+    background-color: #d3d3d3;
+    border: 2px solid #5d5d5d;
+    font-size: 9pt;
+}
+
+/* CSS rules for the double letter cells */
+td.doubleLetter {
+    font-family: "Interstate", sans-serif;
+    text-align: center;
+    background-color: #add8e6;
+    border: 2px solid #5d5d5d;
+    font-size: 10pt;
+}
+
+/* CSS rules for the Tile Rack */
+img {
+    min-width: 40px;
+    max-width: 54px;
+    max-height: 50px;
+}
+
+/* CSS rules for the footer */
+footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5d5d5d;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
